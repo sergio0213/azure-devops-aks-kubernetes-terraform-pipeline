@@ -28,7 +28,7 @@ stages:
           targetPath: '$(System.DefaultWorkingDirectory)/terraform-manifests'
           artifact: 'terraform-manifests-out'
           publishLocation: 'pipeline'
-      - task: TerraformInstaller@1
+      - task: JasonBJohnson.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@1
         displayName: Terraform Install
         inputs:
           terraformVersion: 'latest'
